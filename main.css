@@ -1,0 +1,74 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+}
+
+main {
+	margin: 0 auto;
+	text-align: center;
+}
+
+form {
+	text-align: center;
+	border-top: 2px solid black;
+	border-bottom: 2px solid black;
+	margin: 0 auto;
+	height: 550px;
+	width: 100%;
+	background-image: url("./image/background.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+ 
+
+input[type="text"] {
+	height: 30px;
+	width: 300px;
+	border: 1px solid #260d54;
+ 	background: rgba(13,1,25,.7);
+ 	color: white;
+ 	margin: 0 auto;
+ 	display: block;
+ 	position: relative;
+ 	padding: 5px;
+} 
+
+button[type="submit"] {
+	height: 30px;
+	background: rgba(13,1,25,.7);
+	color: white;
+	font-weight: 500;
+	font-size: 17px;
+	text-align: center; 
+	margin-bottom: 0;
+	cursor: pointer;
+	border: 1px solid #260d54;
+	width: 100px;
+	margin-top: 5px;
+}
+
+h2 {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.wrapper {
+	padding-top: 200px;
+}
+
+.container, .container2, .container3, .container4, .container5 {
+	display: inline-block;
+	border: 1px solid black;
+}
+
+.js-image {
+	display: inline-block;
+}
+
+::-webkit-input-placeholder { /* Chrome */
+  color: white;
+  padding: 5px;
+}
