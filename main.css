@@ -4,6 +4,8 @@
 
 body {
 	margin: 0;
+	font-family: 'Titillium Web', sans-serif;
+	background-color: ivory;
 }
 
 main {
@@ -34,6 +36,7 @@ input[type="text"] {
  	display: block;
  	position: relative;
  	padding: 5px;
+ 	border-radius: 2px;
 } 
 
 button[type="submit"] {
@@ -48,24 +51,37 @@ button[type="submit"] {
 	border: 1px solid #260d54;
 	width: 100px;
 	margin-top: 5px;
+	border-radius: 2px;
 }
 
 h2 {
 	margin-top: 20px;
 	margin-bottom: 20px;
+	font-size: 30px;
+}
+
+h4 {
+	text-decoration: underline;
+}
+
+a {
+	display: block;
 }
 
 .wrapper {
 	padding-top: 200px;
 }
 
-.container, .container2, .container3, .container4, .container5 {
-	display: inline-block;
-	border: 1px solid black;
+.js-image {
+	height: 200px;
+	width: 200px;
+	margin-top: 25px;
 }
 
-.js-image {
-	display: inline-block;
+#general-error {
+	color: red;
+	font-weight: bold;
+	font-size: 40px;
 }
 
 ::-webkit-input-placeholder { /* Chrome */
