@@ -50,6 +50,8 @@ function ifExists(obj) {
 
 
 function renderResult(result) {
+	var asd = ifExists(result, 'professions', 'primary','0', 'name');
+		console.log(asd);
 	var template = $(resultTemplate);
 	template.find('#name').text('Character name: ' + result.name);
 	template.find('#realm').text('Realm: ' + result.realm);
@@ -78,10 +80,10 @@ function renderResult(result) {
 	template.find('#trinket2').text('Trinket 2: ' + (ifExists(result, 'items', 'trinket2', 'name') ? result.items.trinket2.name : "No item")).attr('href', (ifExists(result, 'items', 'trinket2', 'id') ? 'http://www.wowhead.com/item=' + result.items.trinket2.id : '#'));
 	template.find('#waist').text('Waist item: ' + (ifExists(result, 'items', 'waist', 'name') ? result.items.waist.name : "No item")).attr('href', (ifExists(result, 'items', 'waist', 'id') ? 'http://www.wowhead.com/item=' + result.items.waist.id : '#'));
 	template.find('#wrist').text('Wrist item: ' + (ifExists(result, 'items', 'wrist', 'name') ? result.items.wrist.name : "No item")).attr('href', (ifExists(result, 'items', 'wrist', 'id') ? 'http://www.wowhead.com/item=' + result.items.wrist.id : '#'));
-	template.find('#profession-name1').text('Profession 1: ' + (ifExists(result, 'professions', 'primary[0]', 'name') ? result.professions.primary[0].name : "No profession"));
-	template.find('#profession-name2').text('Profession 2: ' + (ifExists(result, 'professions', 'primary[1]', 'name') ? result.professions.primary[1].name : "No profession"));
-	template.find('#profession-level1').text('Profession level: ' + (ifExists(result, 'professions', 'primary[0]', 'rank') ? result.professions.primary[0].name : "No profession") + '/' + (ifExists(result, 'professions', 'primary[0]', 'max') ? result.professions.primary[0].max: "No Profession"));
-	template.find('#profession-level2').text('Profession level: ' + (ifExists(result, 'professions', 'primary[1]', 'rank') ? result.professions.primary[1].name : "No profession") + '/' + (ifExists(result, 'professions', 'primary[1]', 'max') ? result.professions.primary[1].max: "No Profession"));
+	template.find('#profession-name1').text('Profession 1: ' + (ifExists(result, 'professions', 'primary', '0', 'name') ? result.professions.primary[0].name : "No profession"));
+	template.find('#profession-name2').text('Profession 2: ' + (ifExists(result, 'professions', 'primary', '1', 'name') ? result.professions.primary[1].name : "No profession"));
+	template.find('#profession-level1').text('Profession level: ' + (ifExists(result, 'professions', 'primary', '0', 'rank') ? result.professions.primary[0].rank : "No profession") + '/' + (ifExists(result, 'professions', 'primary', '0', 'max') ? result.professions.primary[0].max: "No Profession"));
+	template.find('#profession-level2').text('Profession level: ' + (ifExists(result, 'professions', 'primary', '1', 'rank') ? result.professions.primary[1].rank : "No profession") + '/' + (ifExists(result, 'professions', 'primary', '1', 'max') ? result.professions.primary[1].max: "No Profession"));
 	template.find('#crit').text('Crit rating: ' + result.stats.critRating);
 	template.find('#haste').text('Haste rating: ' + result.stats.hasteRating);
 	template.find('#mastery').text('Mastery rating: ' + result.stats.masteryRating);
