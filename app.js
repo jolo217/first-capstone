@@ -50,8 +50,6 @@ function ifExists(obj) {
 
 
 function renderResult(result) {
-	var asd = ifExists(result, 'professions', 'primary','0', 'name');
-		console.log(asd);
 	var template = $(resultTemplate);
 	template.find('#name').text('Character name: ' + result.name);
 	template.find('#realm').text('Realm: ' + result.realm);
