@@ -106,10 +106,17 @@ function displayError() {
 	$('#general-error').text('something went wrong');
 }
 
+function submitForm() {
+  $('#js-search-form').submit();
+  $('input[type="text"], textarea').val('');
+}
+
 // Event Listener
 
 $('#search-button').on('click', function(event){
+	event.preventDefault();
 	var realmInput = $('.search-input').val();
 	var characterInput = $('.search-input2').val();
 	getCharacterInfo(realmInput, characterInput, displayData, displayError);
+	submitForm();
 });
