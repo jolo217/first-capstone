@@ -106,6 +106,12 @@ function displayError() {
 	$('#general-error').text('something went wrong');
 }
 
+function scroll() {
+	$('html, body').animate({
+    scrollTop: $(".search-results").offset().top
+}, 1000);
+}
+
 // Event Listener
 
 $('#search-button').on('click', function(event){
@@ -113,5 +119,6 @@ $('#search-button').on('click', function(event){
 	var realmInput = $('.search-input').val();
 	var characterInput = $('.search-input2').val();
 	getCharacterInfo(realmInput, characterInput, displayData, displayError);
+	scroll();
 	$('input[type="text"], textarea').val('');
 });
