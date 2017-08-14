@@ -103,7 +103,7 @@ function displayData(data) {
 }
 
 function displayError() {
-	$('#general-error').text('something went wrong');
+	$('#general-error').show().text('something went wrong');
 }
 
 function scroll() {
@@ -116,6 +116,7 @@ function scroll() {
 
 $('#search-button').on('click', function(event){
 	event.preventDefault();
+	$('#general-error').hide();
 	var realmInput = $('.search-input').val();
 	var characterInput = $('.search-input2').val();
 	getCharacterInfo(realmInput, characterInput, displayData, displayError);
