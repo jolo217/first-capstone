@@ -1,8 +1,12 @@
 # first-capstone
-World of Warcraft Armory API Hack
+- World of Warcraft Armory API Hack
 
-Live version: https://jolo217.github.io/first-capstone/
+- Live version: https://jolo217.github.io/first-capstone/
 
-This app uses the search engine criteria's of Realm and Character. One input and submitted will return information about the character being looked up.
+- This app uses the search engine criteria's of Realm and Character. Once input and submitted, it will return information about the character being looked up.
 
-Technology used: HTML/CSS/JavaScript/jQuery
+- ### Tech
+
+* [html] - text formatting
+* [css] - website styling
+*[jQuery] - javascript library
