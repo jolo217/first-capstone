@@ -9,4 +9,4 @@
 
 * [html] - text formatting
 * [css] - website styling
-*[jQuery] - javascript library
+* [jQuery] - javascript library
