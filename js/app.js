@@ -58,7 +58,7 @@ function renderResult(result) {
 	template.find('#gender').text('Gender: ' + result.gender);
 	template.find('#level').text('Level: ' + result.level);
 	template.find('#faction').text('Faction: ' + result.faction);
-	template.find('.js-image').attr('src', (ifExists(result, 'thumbnail') ? 'http://render-api-us.worldofwarcraft.com/static-render/us/' + result.thumbnail : 'Not Found'));
+	template.find('.js-image').attr('src', (ifExists(result, 'thumbnail') ? 'https://render-api-us.worldofwarcraft.com/static-render/us/' + result.thumbnail : 'Not Found'));
 	template.find('#guild-name').text('Guild name: ' + result.guild.name);
 	template.find('#item-level').text('Average item level: ' + result.items.averageItemLevel);
 	template.find('#item-level2').text('Average item level equipped: ' + result.items.averageItemLevelEquipped);
