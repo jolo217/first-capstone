@@ -122,4 +122,10 @@ $('#search-button').on('click', function(event){
 	getCharacterInfo(realmInput, characterInput, displayData, displayError);
 	scroll();
 	$('input[type="text"], textarea').val('');
+	$('.results').show();
+});
+
+// On load function
+$(function(){
+	$('.results').hide();
 });

@@ -23,6 +23,7 @@ form {
 	background-image: url("../image/background.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
+	background-image: top center;
 }
  
 
